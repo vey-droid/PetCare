@@ -4,6 +4,8 @@ import 'food.dart';
 import 'medical.dart';
 import 'weight.dart';
 import 'profile.dart';
+import 'info.dart'; // Add this import
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -82,6 +84,7 @@ class HomeContent extends StatelessWidget {
                 _buildFeatureCard('Medical Records', Icons.medical_services, context, MedicalRecordsScreen()),
                 _buildFeatureCard('Weight Tracking', Icons.monitor_weight, context, WeightTrackingScreen()),
                 _buildFeatureCard('Food Tracking', Icons.pets, context, FoodTrackingScreen()),
+                _buildFeatureCard('Pet Breed Info', Icons.info, context, PetBreedInfoScreen()),
               ],
             ),
           ),
